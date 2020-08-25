@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MenuColors"
+    android:layout_width="fill_parent"
+    android:background="@drawable/a"
+    android:layout_height="fill_parent" >
+	
+    <!-- <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/file_chooser_layout_backImageButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+    </ListView> -->
+    <ListView
+        android:id="@+id/file_chooser_layout_allFilesListView"
+        style="@style/PictogramButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/file_chooser_layout_backImageButton"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        android:footerDividersEnabled="false" >
+    </ListView>
+    
+    <ImageButton
+        android:id="@+id/file_chooser_layout_backImageButton"
+        style="@style/PictogramButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/backbutton_xml" />
+
+    
+
+</RelativeLayout>
